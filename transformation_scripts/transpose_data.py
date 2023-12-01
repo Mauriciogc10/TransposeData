@@ -5,7 +5,6 @@ def transpose(spark):
     # List of CSV files
     csv_files = ["/Users/mauriciogodinezcastro/Desktop/LNN/TransposeData/input_data/ex_1.csv", "/Users/mauriciogodinezcastro/Desktop/LNN/TransposeData/input_data/ex_2.csv", "/Users/mauriciogodinezcastro/Desktop/LNN/TransposeData/input_data/ex_3.csv", "/Users/mauriciogodinezcastro/Desktop/LNN/TransposeData/input_data/ex_4.csv"]
 
-
     # Read the CSV files into a DataFrame
     dfs = [spark.read.csv(file, header=True, inferSchema=True) for file in csv_files]
 
